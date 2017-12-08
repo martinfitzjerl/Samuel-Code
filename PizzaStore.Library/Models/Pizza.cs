@@ -1,6 +1,6 @@
 using System;
 
-namespace Library.Models
+namespace PizzaStore.Library.Models;
 
 public class Pizza : Order
 {

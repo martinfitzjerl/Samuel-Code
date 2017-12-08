@@ -1,7 +1,9 @@
 using System;
 
-namespace PizzaStore.Library.Models
-
+namespace PizzaStore.Library.Models;
+{
+    
+}
 public class History
 {
     public string History { get; set; }

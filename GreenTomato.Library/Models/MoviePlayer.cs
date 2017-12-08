@@ -1,39 +1,44 @@
 namespace GreenTomato.Library
 {
-    public class MoviePlayer : IPlayer
+    public static class MoviePlayer : IPlayer //if class is static then every member has to be static
     {
-        private IMovie m;
+        private static IMovie m; //make sure there is only one object, one thing and one thing only, everything has to be working on the same thing
 
-        public MoviePlayer(IMovie)
+        public static MoviePlayer(IMovie)//singleton we are connected to the same room but have our own space//static we are all stacked on each other, we cannot instantiate by using '"new"'
         {
             m = new MovieUS();
         }
 
-        public void Pause()
+        public static void Pause()
         {
             throw new System.NotImplementedException();
         }
 
-        public string Forward()
+        public static void Play()
         {
-            return strinig.Format("{0}")
+            return string.Format();
+        }
+
+        public static string Forward()
+        {
+            return string.Format("{0}");
         }
         
-        public MoviePlayer(IMovie movie)
+        public static MoviePlayer(IMovie movie)
         {
             m = movie;
         }
 
-        public string Rewind()
+        public static string Rewind()
         {
             return string.Format("{0} {1}", "rewind", m.ToString());
         }
 
-        public delegate string Playing();//publisher subscriber model
+        public static delegate string Playing();//publisher subscriber model
 
-        public event Playing Show;
+        public static event Playing Show;
 
-        public void PlayMovie()
+        public static void PlayMovie()
         {
             Show();
         }
