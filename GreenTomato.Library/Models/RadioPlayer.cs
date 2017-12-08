@@ -7,13 +7,25 @@ namespace GreenTomato.Library.Models
 
         private RadioPlayer()
         {
-
+            
         }
 
 
-        public RadioPlayer Create()
+        public static RadioPlayer Create()
         {
-            return rp;
+            if(rp == null)
+            {
+                lock(rp)//if it is null we can lock the variable
+                {
+                    rp = new RadioPlayer();
+                }
+                {
+                    return rp;
+                }
+            }
+
+
+            
         }
     }
 }

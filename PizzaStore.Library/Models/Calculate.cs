@@ -1,13 +1,15 @@
 using System;
 
-namespace PizzaStore.Library.Models;
-
-
-public class Calculate
+namespace PizzaStore.Library.Models
 {
-    public double tax
-    public void CalculatePrice()
+    public class Calculate
     {
-        return Total;
+        public double tax
+        public void CalculatePrice()
+        {
+            return Total;
+        }
     }
+
+
 }

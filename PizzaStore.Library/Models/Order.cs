@@ -1,18 +1,19 @@
 using System;
 
-namespace PizzaStore.Library.Models;
-
-public class Order
+namespace PizzaStore.Library.Models
 {
-    public void TakeOrder()
+    public class Order
     {
-        Order o = new Order();
+        public void TakeOrder()
+        {
+            Order o = new Order();
+        }
+
+        public void OrderTotal()
+        {
+
+        }
+
+
     }
-
-    public void OrderTotal()
-    {
-
-    }
-
-
 }

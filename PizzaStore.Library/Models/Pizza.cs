@@ -1,16 +1,17 @@
 using System;
 
-namespace PizzaStore.Library.Models;
-
-public class Pizza : Order
+namespace PizzaStore.Library.Models
 {
-    public void Toppings() {get; set;}
-
-    public void getToppings()
+    public class Pizza : Order
     {
-        return Toppings;
+        public void Toppings() {get; set;}
+
+        public void getToppings()
+        {
+            return Toppings;
+        }
+
+        
+
     }
-
-    
-
 }

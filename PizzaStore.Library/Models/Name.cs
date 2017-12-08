@@ -1,13 +1,14 @@
 using System;
 
-namespace PizzaStore.Library.Models;
-
-public class Name
+namespace PizzaStore.Library.Models
 {
-    public string Name() {get; set;}
-    
-    public void GetName(String First, String Last)
+    public class Name
     {
-        return Name;
+        public string Name() {get; set;}
+        
+        public void GetName(String First, String Last)
+        {
+            return Name;
+        }
     }
 }

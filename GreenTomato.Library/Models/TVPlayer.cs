@@ -2,9 +2,9 @@ namespace GreenTomato.Library.Models
 {
     public static class TVPlayer
     {
-        public void Play()
+        public static void Play()
         {
-            
+            var rp = new RadioPlayer();
         }
     }
 }
