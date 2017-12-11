@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace PizzaStore.Tests
+namespace Palindrome.Library
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("This is a Palindrome");
         }
+        
     }
 }
