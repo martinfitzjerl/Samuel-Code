@@ -7,9 +7,19 @@ namespace Palindrome.Library.Models
     {
         public void CalculatePalindrome()
         {
+            Palindrome palindrome = new Palindrome();
             
-        }
 
-        public Palindrome Palindrome { get; set; }
+            if (strcmp(palindrome, palindrome) == 0)
+               {
+                 palindrome = true;
+            }
+            else
+            {
+                 palindrome = false;
+            }
+            }
+
+        }
     }
 }
