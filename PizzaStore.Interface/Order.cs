@@ -4,7 +4,7 @@ namespace PizzaStore.Library.Models
 {
     public class Order
     {
-        Order o = new Pizza();
+        Pizza p = new Pizza();
         o.ToppingCheese = ToppingCheese;
         o.ToppingSausage = ToppingSausage;
         o.ToppingPepperoni = ToppingPepperoni;
