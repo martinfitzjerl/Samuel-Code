@@ -1,4 +1,0 @@
-namespace PizzaStore.Library.Models
-{
-    
-}
