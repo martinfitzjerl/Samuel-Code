@@ -4,11 +4,7 @@ namespace PizzaStore.Library.Models
 {
     public class Name
     {
-        public string Name() {get; set;}
-        
-        public void GetName(String First, String Last)
-        {
-            return Name;
-        }
+        public string FirstName {get; set;}
+        public string LastName {get; set;}
     }
 }

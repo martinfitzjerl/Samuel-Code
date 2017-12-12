@@ -2,7 +2,7 @@ using System;
 
 namespace PizzaStore.Library.Models
 {
-    public class Pizza : Order
+    public class Pizza
     {
         public int ToppingCheese {get; set;}
         public int ToppingSausage { get; set; }
@@ -14,10 +14,6 @@ namespace PizzaStore.Library.Models
         public int CrustPan { get; set; }
         public int CrustDeepDish { get; set; }
         public int PizzaSize { get; set; }
-
-
-
-
         
 
     }
