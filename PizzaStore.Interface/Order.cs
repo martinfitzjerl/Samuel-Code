@@ -18,10 +18,21 @@ namespace PizzaStore.Library.Interface
         p.PizzaSize = PizzaSize;
 
 
-        public void ToppingCheese()
+        public Order(string order, )
         {
+            if (order == null)
+                throw new ArgumentNullException("The order cannot be null.");
+            else if (String.IsNullOrWhiteSpace(make))
+                throw new ArgumentException("order cannot be an empty string");
+            
 
 
+        }
+
+        public OrderLimit()
+        {
+            if (orderLimit == null)
+                throw new Arg
         }
 
         public void GetCustomerLast()

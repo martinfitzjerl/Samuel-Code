@@ -1,11 +1,10 @@
 namespace PizzaStore.Library.Models
 {
-    public class Customer : Order
+    public class Customer : Address
     {
-        public void CustomerFirst()
-        {
-            return customerFirst;
-        }
+        Customer c = new Customer
+
+        Address();
 
         public void CustomerLast()
         {
@@ -26,6 +25,8 @@ namespace PizzaStore.Library.Models
         {
             return customerPizza;
         }
+
+
 
     }
 }
