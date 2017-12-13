@@ -5,17 +5,17 @@ namespace PizzaStore.Library.Interface
 {
     public class Order
     {
-        Pizza p = new Pizza();
-        p.ToppingCheese = ToppingCheese;
-        p.ToppingSausage = ToppingSausage;
-        p.ToppingPepperoni = ToppingPepperoni;
-        p.ToppingHam = ToppingHam;
-        p.ToppingBellPepper = ToppingBellPepper;
-        p.ToppingChicken = ToppingChicken;
-        p.ToppingSauce = ToppingSauce;
-        p.CrustPan = CrustPan;
-        p.CrustDeepDish = CrustDeepDish;
-        p.PizzaSize = PizzaSize;
+        Order o = new Order();
+        o.ToppingCheese = ToppingCheese;
+        o.ToppingSausage = ToppingSausage;
+        o.ToppingPepperoni = ToppingPepperoni;
+        o.ToppingHam = ToppingHam;
+        o.ToppingBellPepper = ToppingBellPepper;
+        o.ToppingChicken = ToppingChicken;
+        o.ToppingSauce = ToppingSauce;
+        o.CrustPan = CrustPan;
+        o.CrustDeepDish = CrustDeepDish;
+        o.PizzaSize = PizzaSize;
 
 
         public Order(string order, )
@@ -29,6 +29,15 @@ namespace PizzaStore.Library.Interface
 
         }
 
+        public void CustomerOrderLimit()
+        {
+            return customerOrderNumber;
+        }
+
+        public void CustomerTimeLimit()
+        {
+            return customerTimeNumber;
+        }
         public OrderLimit()
         {
             if (orderLimit == null)

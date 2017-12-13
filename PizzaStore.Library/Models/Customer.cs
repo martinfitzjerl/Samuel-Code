@@ -1,24 +1,19 @@
+using System;
+using PizzaStore.Library.Models;
+
 namespace PizzaStore.Library.Models
 {
-    public class Customer : Address
+    public class Customer 
     {
-        Customer c = Address
-        Address = c.Address();
         private int customerLimit;
+        private int customerTimeLimit;
+        private string customerFirst;
+        private string customerLast;
+        private char customerAddress;
+        private int phone;
 
-        public int CustomerLimit { get; set; }
-
-        public void CustomerLimit()
-        {
-
-            c.Address = Address();
-            c.
-        }
-
-
-        
-
-        
+    }
+}
 
 /*
                 public void WriteToFile()
@@ -30,28 +25,3 @@ namespace PizzaStore.Library.Models
             File.WriteAllText(@"C:\\Revature\\contact.txt", c.Name.ToString());
         }
 */
-
-        public void CustomerLast()
-        {
-            return customerLast;
-        }
-
-        public void CustomerAddress()
-        {
-            return customerAddress;
-        }
-
-        public void OrderTotal()
-        {
-            return orderTotal;
-        }
-
-        public void CustomerPizza()
-        {
-            return customerPizza;
-        }
-
-
-
-    }
-}
