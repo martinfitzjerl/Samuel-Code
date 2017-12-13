@@ -7,15 +7,15 @@ namespace PizzaStore.Library.Interface
     {
         Order o = new Order();
         o.ToppingCheese();
-        o.ToppingSausage() = ToppingSausage;
-        o.ToppingPepperoni() = ToppingPepperoni;
-        o.ToppingHam() = ToppingHam;
-        o.ToppingBellPepper() = ToppingBellPepper;
-        o.ToppingChicken() = ToppingChicken;
-        o.ToppingSauce() = ToppingSauce;
-        o.CrustPan() = CrustPan;
-        o.CrustDeepDish() = CrustDeepDish;
-        o.PizzaSize() = PizzaSize;
+        o.ToppingSausage();
+        o.ToppingPepperoni();
+        o.ToppingHam();
+        o.ToppingBellPepper();
+        o.ToppingChicken();
+        o.ToppingSauce();
+        o.CrustPan();
+        o.CrustDeepDish();
+        o.PizzaSize();
 
 
         public Order(string order, )
@@ -44,15 +44,6 @@ namespace PizzaStore.Library.Interface
                 throw new Arg
         }
 
-        public void GetCustomerLast()
-        {
-
-        }
-
-        public void GetCustomerAddress()
-        {
-
-        }
 
         public void SelectToppings()
         {
