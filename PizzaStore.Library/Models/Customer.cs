@@ -2,9 +2,34 @@ namespace PizzaStore.Library.Models
 {
     public class Customer : Address
     {
-        Customer c = new Customer
+        Customer c = Address
+        Address = c.Address();
+        private int customerLimit;
 
-        Address();
+        public int CustomerLimit { get; set; }
+
+        public void CustomerLimit()
+        {
+
+            c.Address = Address();
+            c.
+        }
+
+
+        
+
+        
+
+/*
+                public void WriteToFile()
+        {
+            var c = new Contact();
+
+            c.Name = new Name(){First = "dot", Last = "net"};
+
+            File.WriteAllText(@"C:\\Revature\\contact.txt", c.Name.ToString());
+        }
+*/
 
         public void CustomerLast()
         {
