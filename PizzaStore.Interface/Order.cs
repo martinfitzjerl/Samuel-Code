@@ -3,28 +3,33 @@ using PizzaStore.Library.Models;
 
 namespace PizzaStore.Library.Interface
 {
-    public class Order
+    public class Order 
     {
-        Order o = new Order();
-        o.ToppingCheese();
-        o.ToppingSausage();
-        o.ToppingPepperoni();
-        o.ToppingHam();
-        o.ToppingBellPepper();
-        o.ToppingChicken();
-        o.ToppingSauce();
-        o.CrustPan();
-        o.CrustDeepDish();
-        o.PizzaSize();
+        Order o = Order();
+        
 
 
-        public Order(string order, )
+
+        public Order()
         {
+            
+            this.ToppingCheese() = toppingCheese; 
+            this.ToppingSausage() = toppingSausage;
+            this.ToppingPepperoni() = toppingPepperoni;
+            this.ToppingHam() = toppingHam;
+            this.ToppingBellPepper() = toppingBellPepper;
+            this.ToppingChicken() = toppingChicken;
+            this.ToppingSauce() = toppingSauce;
+            this.CrustPan() = crustPan;
+            this.CrustDeepDish() = crustDeepDish;
+            this.PizzaSize() = pizzaSize;
+            
+            /*
             if (order == null)
                 throw new ArgumentNullException("The order cannot be null.");
             else if (String.IsNullOrWhiteSpace(make))
                 throw new ArgumentException("order cannot be an empty string");
-            
+          */
 
 
         }
@@ -40,8 +45,10 @@ namespace PizzaStore.Library.Interface
         }
         public OrderLimit()
         {
-            if (orderLimit == null)
-                throw new Arg
+            if (orderLimit == null && orderTimeLimit == 6)
+                throw new ArgumentException("customer orders exceeded");
+            else if (String.IsNullOrWhiteSpace(orderLimit))
+                throw new ArgumentException("order cannot be an empty string");
         }
 
 
