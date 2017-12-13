@@ -6,16 +6,16 @@ namespace PizzaStore.Library.Interface
     public class Order
     {
         Order o = new Order();
-        o.ToppingCheese = ToppingCheese;
-        o.ToppingSausage = ToppingSausage;
-        o.ToppingPepperoni = ToppingPepperoni;
-        o.ToppingHam = ToppingHam;
-        o.ToppingBellPepper = ToppingBellPepper;
-        o.ToppingChicken = ToppingChicken;
-        o.ToppingSauce = ToppingSauce;
-        o.CrustPan = CrustPan;
-        o.CrustDeepDish = CrustDeepDish;
-        o.PizzaSize = PizzaSize;
+        o.ToppingCheese();
+        o.ToppingSausage() = ToppingSausage;
+        o.ToppingPepperoni() = ToppingPepperoni;
+        o.ToppingHam() = ToppingHam;
+        o.ToppingBellPepper() = ToppingBellPepper;
+        o.ToppingChicken() = ToppingChicken;
+        o.ToppingSauce() = ToppingSauce;
+        o.CrustPan() = CrustPan;
+        o.CrustDeepDish() = CrustDeepDish;
+        o.PizzaSize() = PizzaSize;
 
 
         public Order(string order, )

@@ -15,6 +15,8 @@ namespace PizzaStore.Library.Models
         private double crustDeepDishPrice = 2.00;
         private double pizzaSizePrice = 1.00;
         private double orderTotal = 0;
+
+        private double orderTotal;
         
         public void CalculateTotal()
         {

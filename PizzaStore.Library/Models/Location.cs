@@ -5,7 +5,7 @@ namespace PizzaStore.Library.Models
         Location l = new Location()
         l.Address();
         l.Name();
-        private string locationNotes;
+        private string locationNote;
         private string locationName;
 
         public LocationName()
@@ -13,14 +13,14 @@ namespace PizzaStore.Library.Models
             Location name = Name();
         }
 
-        public LocationNotes()
+        public LocationNote()
         {
-            Location note = this.Notes();
+            Location note = this.Note();
         }
 
         public String LocationName { get; set; }
 
-        public String LocationNotes { get; set; }
+        public String LocationNote { get; set; }
         
     }
     

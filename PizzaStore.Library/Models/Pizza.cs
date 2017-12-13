@@ -4,6 +4,17 @@ namespace PizzaStore.Library.Models
 {
     public class Pizza
     {
+        private int toppingCheese;
+        private int toppingSausage;
+        private int toppingPepperoni;
+        private int toppingHam;
+        private int toppingBellPepper;
+        private int toppingChicken;
+        private int toppingSauce;
+        private int crustPan;
+        private int crustDeepDish;
+        private int pizzaSize;
+
         public int ToppingCheese {get; set;}
         public int ToppingSausage { get; set; }
         public int ToppingPepperoni { get; set;}
