@@ -5,7 +5,7 @@ namespace PizzaStore.Library.Models
 {
     public class Phone
     {
-        private int phone;
+        private int _phone;
         public int Phone { get; set; }
     }
 }

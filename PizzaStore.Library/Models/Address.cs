@@ -2,23 +2,51 @@ namespace PizzaStore.Library.Models
 {
     public class Address
     {
-        private char _street;
-        private char _city;
-        private char _state;
-        private int _zipcode;
         public char Street 
         { 
             get
             {
                 return _street;
             } 
-            set
+            private set
             {
                 _street = value;
             } 
         }
-        public char City { get; set; }
-        public char State { get; set; }
-        public int Zipcode { get; set; }
+        public char City 
+        { 
+            get
+            {
+                return _city;
+            }
+            private set
+            {
+                _city = value;
+            } 
+        }
+
+        public char State 
+        { 
+            get
+            {
+                return _state;
+            }
+            private set
+            {
+                _state = value;
+            } 
+        }
+
+        public int ZipCode 
+        { 
+            get
+            {
+                return _zipcode;
+            }
+            private set
+            {
+                _zipcode = value;
+            } 
+        }        
     }
 }

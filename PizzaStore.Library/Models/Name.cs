@@ -4,8 +4,8 @@ namespace PizzaStore.Library.Models
 {
     public class Name
     {
-        private string firstName;
-        private string lastName;
+        private string _firstName;
+        private string _lastName;
         public string FirstName {get; set;}
         public string LastName {get; set;}
     }
