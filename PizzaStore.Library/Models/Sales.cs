@@ -1,3 +1,5 @@
+using System;
+
 namespace PizzaStore.Library.Models
 {
     public class Sales
@@ -23,18 +25,6 @@ namespace PizzaStore.Library.Models
             private set
             {
                 _quantityOrder = value;
-            } 
-        }
-
-        public char Street 
-        { 
-            get
-            {
-                return _street;
-            } 
-            private set
-            {
-                _street = value;
             } 
         }
     }

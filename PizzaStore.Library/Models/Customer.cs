@@ -5,12 +5,38 @@ namespace PizzaStore.Library.Models
 {
     public class Customer 
     {
-        private int customerLimit;
-        private int customerTimeLimit;
-        private string customerFirst;
-        private string customerLast;
-        private char customerAddress;
-        private int phone;
+        Customer a = new Address()
+        a.Address();
+        private int _customerID;
+        private int _customerLimit;
+        private int _customerTimeLimit;
+        private string _customerFirst;
+        private string _customerLast;
+
+        public char State 
+        { 
+            get
+            {
+                return _state;
+            }
+            private set
+            {
+                _state = value;
+            } 
+        }
+
+        public char CustomerID
+        { 
+            get
+            {
+                return _customerID;
+            }
+            private set
+            {
+                _customerID = value;
+            } 
+        }
+
 
     }
 }

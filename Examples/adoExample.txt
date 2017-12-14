@@ -1,0 +1,112 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AdventureWorks.AdoData
+{
+public class AdoReader
+   {
+private List<Customer> customers = new List<Customer>();
+
+    private string ConnectionString = "data source=fredsqlweek.database.windows.net;initial catalog=fredsweek;user id=sqladmin;password=Password123;";
+    public List<Customer> GetCustomers() //connected architector is allowed only by the sql data reader
+   {
+ string query = "select firstname, lastname from SalesLT.Customer;";
+   }
+   SqlCommand cmd = new SqlCommand(query);//the bridge,
+   SqlDataReader dr;
+
+
+   using(SqlConnection con = new SqlConnectionString))
+   {
+    con.Open();
+    cmd.Connection = con;//a bridge to 
+    dr = cmd.ExecuteReader();
+
+    foreach (var item in dr())//keep connection open at all times
+    {
+     while(dr.Read())
+      {
+       customers.Add(new Customer(dr[0].ToString(), dr[1].ToString()))//we can call stuff on position/column from select statement
+      }
+    }
+   }
+    return customers;
+   }
+  }
+
+
+
+
+namespace AdventureWorks.AdoData
+{
+ public class Customer
+{
+ public string Fname {get}
+}
+}
+
+
+
+
+using AdventureWorks.AdoData;
+using System
+
+namespace AdventureWorks.Console
+{
+ class Program
+ {
+   static void Main(string[] args)
+   {
+     var ador = new AdoReader();
+     
+     foreach (var item in ador.GetCustomers()) //nuget sqlclient  system.data.sqlclient
+     {
+      System.Console.WriteLine(item.Fname + 
+ }
+
+
+
+
+namespace AdventureWorks.AdoData
+{
+public class AdoAdapter
+   {
+private List<Customer> customers = new List<Customer>();
+
+    private string ConnectionString = "data source=fredsqlweek.database.windows.net;initial catalog=fredsweek;user id=sqladmin;password=Password123;";
+    public List<Customer> GetCustomers() //connected architector is allowed only by the sql data adapter
+   {
+ string query = "select firstname, lastname from SalesLT.Customer;";
+   }
+   DataSet ds = new DataSet(); //data set will load up and comeback with info
+   SqlCommand cmd = new SqlCommand(query);//the bridge,
+   SqlDataReader dr;
+
+
+   using(SqlConnection con = new SqlConnectionString(ConnectionString))
+   {
+    DataSet ds = new DataSet();//adapter is slightly faster
+
+    con.Open();
+    cmd.Connection = con;//a bridge to 
+    da = SelectCommand = cmd;
+    da.Fill(ds);
+
+    foreach (DataRow r in ds.Tables[0].Rows)//keep connection open at all times
+    {
+     while(da.Read())
+      {
+       customers.Add(new Customer(r[0].ToString(), r[1].ToString()))//we can call stuff on position/column from select statement
+       customers.Add(c),
+       System.Console.WriteLine(c.Fname + " " + c.Lname);
+
+       Thread.Sleep(1500);
+      }
+    }
+   }
+    return customers;
+   }
+  }
