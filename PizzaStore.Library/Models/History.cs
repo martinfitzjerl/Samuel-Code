@@ -4,11 +4,21 @@ namespace PizzaStore.Library.Models;
 {
     public class History
     {
-        private string history;
-        public string History { get; set; }
+        public char History
+        { 
+            get
+            {
+                return _history;
+            } 
+            private set
+            {
+                _history = value;
+            } 
+        }
+
         public void GetHistory()
         {
-            return History;
+            
         }
     }
 }

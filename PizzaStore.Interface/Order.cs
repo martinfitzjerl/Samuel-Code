@@ -5,27 +5,22 @@ namespace PizzaStore.Library.Interface
 {
     public class Order 
     {
-        Order o = Order();
-        
-
-
-
-        public Order()
+        public void Order()
         {
-            
-            this.ToppingCheese() = toppingCheese; 
-            this.ToppingSausage() = toppingSausage;
-            this.ToppingPepperoni() = toppingPepperoni;
-            this.ToppingHam() = toppingHam;
-            this.ToppingBellPepper() = toppingBellPepper;
-            this.ToppingChicken() = toppingChicken;
-            this.ToppingSauce() = toppingSauce;
-            this.CrustPan() = crustPan;
-            this.CrustDeepDish() = crustDeepDish;
-            this.PizzaSize() = pizzaSize;
+            Order p = new Pizza()
+            this.ToppingCheese() = p.ToppingCheese; 
+            this.ToppingSausage() = p.ToppingSausage;
+            this.ToppingPepperoni() = p.ToppingPepperoni;
+            this.ToppingHam() = p.ToppingHam;
+            this.ToppingBellPepper() = p.ToppingBellPepper;
+            this.ToppingChicken() = p.ToppingChicken;
+            this.ToppingSauce() = p.ToppingSauce;
+            this.CrustPan() = p.CrustPan;
+            this.CrustDeepDish() = p.CrustDeepDish;
+            this.PizzaSize() = p.PizzaSize;
             
             /*
-            if (order == null)
+            if (o.ToppingCheese() == null)
                 throw new ArgumentNullException("The order cannot be null.");
             else if (String.IsNullOrWhiteSpace(make))
                 throw new ArgumentException("order cannot be an empty string");
