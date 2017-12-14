@@ -2,7 +2,7 @@ using System;
 
 namespace PizzaStore.Library.Models
 {
-    public class Calculate : Order
+    public class Calculate
     {
         private double cheesePrice = 1.00;
         private double sausagePrice = 1.50;
