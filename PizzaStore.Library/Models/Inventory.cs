@@ -102,9 +102,5 @@ namespace PizzaStore.Library.Models
                 _crustDeepDish = value;
             } 
         }
-         
-        public int CrustDeepDish { get; set; }
-    }
-
-    
+    }   
 }

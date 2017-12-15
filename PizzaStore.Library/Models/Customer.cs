@@ -12,7 +12,17 @@ namespace PizzaStore.Library.Models
         private int _customerTimeLimit;
         private string _customerFirst;
         private string _customerLast;
-
+        public int CustomerID
+        { 
+            get
+            {
+                return _customerID;
+            }
+            private set
+            {
+                _customerID = value;
+            } 
+        }
         public char State 
         { 
             get
@@ -25,17 +35,6 @@ namespace PizzaStore.Library.Models
             } 
         }
 
-        public char CustomerID
-        { 
-            get
-            {
-                return _customerID;
-            }
-            private set
-            {
-                _customerID = value;
-            } 
-        }
 
 
     }

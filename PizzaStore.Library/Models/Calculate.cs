@@ -1,5 +1,5 @@
 using System;
-
+using PizzaStore.Library.Models;
 namespace PizzaStore.Library.Models
 {
     public class Calculate
@@ -16,11 +16,13 @@ namespace PizzaStore.Library.Models
         private double pizzaSizePrice = 1.00;
         private double orderTotal = 0;
 
+        Pizza p = new Pizza();
+
         private double orderTotal;
         
         public void CalculateTotal()
         {
-            orderTotal =+ cheesePrice * p.ToppingCheese;
+            orderTotal =+ cheesePrice * p.ToppingCheese();
             orderTotal =+ sausagePrice * p.ToppingSausage;
             orderTotal =+ pepperoniPrice * p.ToppingPepperoni;
             orderTotal =+ hamPrice * p.ToppingHam;

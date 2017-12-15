@@ -1,4 +1,5 @@
 using System;
+using PizzaStore.Library.Models;
 
 namespace PizzaStore.Library.Models
 {
@@ -115,10 +116,16 @@ namespace PizzaStore.Library.Models
                 _crustDeepDish = value;
             } 
         }
-         
-    }
-
-        
-
+        public int PizzaSize 
+        { 
+            get
+            {
+                return _pizzaSize;
+            } 
+            private set
+            {
+                _pizzaSize = 1;
+            } 
+        }
     }
 }
