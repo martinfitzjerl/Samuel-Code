@@ -9,9 +9,25 @@ namespace PizzaStore.Library.Interface
         {
             Order o = new List<string>();
             foreach (string name in names)
+
+        Pizza pies  = new Pizza { };
+
+        List<Pizza> pies = new List<Pizza>
         {
-            Console.WriteLine(name);
-        }
+            new Cat(){ Name = "Sylvester", Age=8 },
+            new Cat(){ Name = "Whiskers", Age=2 },
+            new Cat(){ Name = "Sasha", Age=14 }
+        };
+            foreach (Pizza p in pies)
+            System.Console.WriteLine(p.Name);
+
+        foreach (pie  in Pizza)
+            if (p != null)
+                System.Console.WriteLine(p.Name);
+            else
+                System.Console.WriteLine("List element is null.");
+    }
+
         public Pizza()
         {
             p.ToppingCheese;
