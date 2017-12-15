@@ -4,7 +4,11 @@ namespace PizzaStore.Library.Models;
 {
     public class History
     {
-        public char History
+        History h = new History();
+        h.Customer();
+        
+    
+        public History
         { 
             get
             {
@@ -16,9 +20,5 @@ namespace PizzaStore.Library.Models;
             } 
         }
 
-        public void GetHistory()
-        {
-            
-        }
     }
 }

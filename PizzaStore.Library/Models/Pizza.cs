@@ -4,21 +4,7 @@ namespace PizzaStore.Library.Models
 {
     public class Pizza
     {
-        Pizza p = new Pizza();
-        public Pizza()
-        {
-            p.ToppingCheese;
-            p.ToppingSausage;
-            p.ToppingPepperoni;
-            p.ToppingHam;
-            p.ToppingBellPepper;
-            p.ToppingChicken;
-            p.ToppingSauce;
-            p.CrustPan;
-            p.CrustDeepDish;
-            p.PizzaSize;
-        }
-        public char ToppingCheese 
+        public int ToppingCheese 
         { 
             get
             {
@@ -29,7 +15,7 @@ namespace PizzaStore.Library.Models
                 _toppingCheese = value;
             } 
         }
-        public char ToppingSausage 
+        public int ToppingSausage 
         { 
             get
             {
@@ -40,7 +26,7 @@ namespace PizzaStore.Library.Models
                 _toppingSausage = value;
             } 
         }
-        public char ToppingPepperoni 
+        public int ToppingPepperoni 
         { 
             get
             {
@@ -52,7 +38,7 @@ namespace PizzaStore.Library.Models
             } 
         }
                         
-        public char ToppingHam 
+        public int ToppingHam 
         { 
             get
             {
@@ -63,7 +49,7 @@ namespace PizzaStore.Library.Models
                 _toppingHam = value;
             } 
         }
-        public char ToppingBellPepper 
+        public int ToppingBellPepper 
         { 
             get
             {
@@ -74,7 +60,7 @@ namespace PizzaStore.Library.Models
                 _toppingBellPepper = value;
             } 
         }
-        public char ToppingChicken 
+        public int ToppingChicken 
         { 
             get
             {
@@ -85,7 +71,7 @@ namespace PizzaStore.Library.Models
                 _toppingChicken = value;
             } 
         }
-        public char ToppingSauce 
+        public int ToppingSauce 
         { 
             get
             {
@@ -96,7 +82,7 @@ namespace PizzaStore.Library.Models
                 _toppingSauce = value;
             } 
         }
-        public char CrustPan 
+        public int CrustPan 
         { 
             get
             {
@@ -104,10 +90,10 @@ namespace PizzaStore.Library.Models
             } 
             private set
             {
-                _crustPan = value;
+                _crustPan = 1;
             } 
         }
-        public char CrustDeepDish 
+        public int CrustDeepDish 
         { 
             get
             {

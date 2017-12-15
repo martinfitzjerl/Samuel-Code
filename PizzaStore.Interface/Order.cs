@@ -7,6 +7,26 @@ namespace PizzaStore.Library.Interface
     {
         public void Order()
         {
+            Order o = new List<string>();
+            foreach (string name in names)
+        {
+            Console.WriteLine(name);
+        }
+        public Pizza()
+        {
+            p.ToppingCheese;
+            p.ToppingSausage;
+            p.ToppingPepperoni;
+            p.ToppingHam;
+            p.ToppingBellPepper;
+            p.ToppingChicken;
+            p.ToppingSauce;
+            p.CrustPan;
+            p.CrustDeepDish;
+            p.PizzaSize;
+        }
+
+            /*
             Order p = new Pizza()
             this.ToppingCheese() = p.ToppingCheese; 
             this.ToppingSausage() = p.ToppingSausage;
@@ -18,7 +38,7 @@ namespace PizzaStore.Library.Interface
             this.CrustPan() = p.CrustPan;
             this.CrustDeepDish() = p.CrustDeepDish;
             this.PizzaSize() = p.PizzaSize;
-            
+            */
             /*
             if (o.ToppingCheese() == null)
                 throw new ArgumentNullException("The order cannot be null.");
@@ -45,6 +65,7 @@ namespace PizzaStore.Library.Interface
             else if (String.IsNullOrWhiteSpace(orderLimit))
                 throw new ArgumentException("order cannot be an empty string");
         }
+
 
 
         public void SelectToppings()
