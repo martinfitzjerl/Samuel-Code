@@ -4,6 +4,17 @@ namespace PizzaStore.Library.Models
 {
     public class Pizza
     {
+        public int PizzaID
+        { 
+            get
+            {
+                return _pizzaID;
+            } 
+            private set
+            {
+                _pizzaID = value;
+            } 
+        }
         public int ToppingCheese 
         { 
             get
@@ -105,7 +116,6 @@ namespace PizzaStore.Library.Models
             } 
         }
          
-        public int CrustDeepDish { get; set; }
     }
 
         

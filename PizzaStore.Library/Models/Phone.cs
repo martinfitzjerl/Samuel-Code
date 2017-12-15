@@ -7,6 +7,16 @@ namespace PizzaStore.Library.Models
     {
 
         private int _phone;
-        public int Phone { get; set; }
+        public int PhoneID { get; set; }
+        { 
+            get
+            {
+                return _phoneID;
+            } 
+            private set
+            {
+                _phoneID = value;
+            } 
+        }
     }
 }

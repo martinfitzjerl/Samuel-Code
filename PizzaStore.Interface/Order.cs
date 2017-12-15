@@ -14,14 +14,19 @@ namespace PizzaStore.Library.Interface
 
         List<Pizza> pies = new List<Pizza>
         {
-            new Cat(){ Name = "Sylvester", Age=8 },
-            new Cat(){ Name = "Whiskers", Age=2 },
-            new Cat(){ Name = "Sasha", Age=14 }
+            new Pizza(){ ToppingCheese = ""},
+            new Pizza(){ ToppingSausage = "" },
+            new Pizza(){ ToppingHam = "" }
+            new Pizza(){ ToppingBellPepper = "" }
+            new Pizza(){ ToppingChicken = "" }
+            new Pizza(){ ToppingSauce = "" }
+            new Pizza(){ CrustPan = "" }
+            new Pizza(){ CrustDeepDish = "" }
         };
             foreach (Pizza p in pies)
             System.Console.WriteLine(p.Name);
 
-        foreach (pie  in Pizza)
+        foreach (pie in Pizza)
             if (p != null)
                 System.Console.WriteLine(p.Name);
             else

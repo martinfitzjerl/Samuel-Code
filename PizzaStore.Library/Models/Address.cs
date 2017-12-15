@@ -2,6 +2,17 @@ namespace PizzaStore.Library.Models
 {
     public class Address
     {
+        public int AddressID
+        { 
+            get
+            {
+                return _addressID;
+            } 
+            private set
+            {
+                _addressID = value;
+            } 
+        }
         public char Street 
         { 
             get

@@ -1,4 +1,5 @@
 using System;
+using PizzaStore.Library.Models;
 
 namespace PizzaStore.Library.Models
 {
@@ -15,7 +16,19 @@ namespace PizzaStore.Library.Models
                 _sales = value;
             } 
         }
-        
+
+        public int SalesID
+            { 
+            get
+            {
+                return _salesID;
+            } 
+            private set
+            {
+                _salesID = value;
+            } 
+        }
+
         public int QuantityOrder 
         { 
             get
