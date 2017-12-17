@@ -8,20 +8,15 @@ namespace PizzaStore.Library.Interface
     {
         public void GetPizza()
         {
-            Pizza topping  = new Pizza();
-            Order pizza = new Pizza();
+            //Pizza topping  = new Pizza();
+            //Order pizza = new Pizza();
 
-            List<Pizza> toppings = new List<Pizza>
-            toppings.Add(topping.ToppingCheese());
-            pizza.Add(topping.ToppingSausage());
-            MyList.Add(topping.ToppingPepperoni());
-            MyList.Add(topping.ToppingHam());
-            MyList.Add(topping.ToppingBellPepper());
-            MyList.Add(topping.ToppingChicken());
-            MyList.Add(topping.ToppingSauce());
-            MyList.Add(topping.CrustPan());
-            MyList.Add(topping.CrustDeepDish());
-            MyList.Add(topping.PizzaSize());
+            List<Pizza> pizza = new List<Pizza>
+        {
+            new Pizza(){ ToppingCheese = 1, ToppingSausage = 1, ToppingPepperoni = 1, ToppingHam = 1, ToppingBellPepper = value, ToppingChicken = value, ToppingSauce = value, CrustPan = 1, CrustDeepDish = value, PizzaSize = 1 },
+        };
+
+
     }
 }
 {
@@ -197,6 +192,20 @@ namespace PizzaStore.Library.Interface
             new Pizza(){ },
             new Pizza(){ }
         };
+
+
+
+                    List<Pizza> toppings = new List<Pizza>
+            toppings.Add(topping.ToppingCheese());
+            pizza.Add(topping.ToppingSausage());
+            MyList.Add(topping.ToppingPepperoni());
+            MyList.Add(topping.ToppingHam());
+            MyList.Add(topping.ToppingBellPepper());
+            MyList.Add(topping.ToppingChicken());
+            MyList.Add(topping.ToppingSauce());
+            MyList.Add(topping.CrustPan());
+            MyList.Add(topping.CrustDeepDish());
+            MyList.Add(topping.PizzaSize());
           */
 
 
