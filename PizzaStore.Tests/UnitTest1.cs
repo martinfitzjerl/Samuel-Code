@@ -6,11 +6,11 @@ namespace PizzaStore.Tests
 {
     public class UnitTest1
     {
-        private readonly Prime _primeService;
+        private readonly Pizza _pizzaService;
 
-        public PrimeService_IsPrimeShould()
+        public PizzaService_IsPizzaShould()
         {
-            _primeService = new PrimeService();
+            _pizzaService = new PizzaService();
         }
 
         [Fact]
@@ -18,12 +18,12 @@ namespace PizzaStore.Tests
         {
             //Given/Arrange
             //create instance of subject - System Under Test
-            var result = _primeService.IsPrime(1);
+            var result = _pizzaService.IsPizza(1);
 
 
             //When/Act
             //execute the action
-            Assert.False(result, "1 should not be prime");
+            Assert.False(result, "1 should not be pizza");
 
             //Then/Assert
             //finally execute assert - expected vs actual

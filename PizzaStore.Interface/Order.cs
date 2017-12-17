@@ -188,6 +188,15 @@ namespace PizzaStore.Library.Interface
                 {
                  return $"{fname} {lname}".Trim();
                 }
+
+
+
+            List<Pizza> toppings = new List<Pizza>
+        {
+            new Pizza(){ ToppingCheese = 1, ToppingSausage = 1, ToppingPepperoni = 1, ToppingHam = 1, ToppingBellPepper = value, ToppingChicken = value, ToppingSauce = value, CrustPan = 1, CrustDeepDish = value, PizzaSize = 1 },
+            new Pizza(){ },
+            new Pizza(){ }
+        };
           */
 
 
