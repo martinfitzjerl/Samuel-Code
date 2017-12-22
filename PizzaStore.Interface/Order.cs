@@ -1,31 +1,27 @@
 using System;
+using System.Collections.Generic;
+using PizzaStore.Library;
 using PizzaStore.Library.Models;
 using System.Linq;
 
 namespace PizzaStore.Library.Interface
 {
-    public class Order 
+    public class Order
     {
         public void GetPizza()
         {
-            //Pizza topping  = new Pizza();
-            //Order pizza = new Pizza();
+            Order pizza = new Pizza();
+            Pizza pizzatpns = new Pizza();
+            
+            
 
-            List<Pizza> pizza = new List<Pizza>
+            List<Pizza> pizzatpns = new List<Pizza>
         {
-            new Pizza(){ ToppingCheese = 1, ToppingSausage = 1, ToppingPepperoni = 1, ToppingHam = 1, ToppingBellPepper = value, ToppingChicken = value, ToppingSauce = value, CrustPan = 1, CrustDeepDish = value, PizzaSize = 1 },
+            new Pizza(){ ToppingCheese = 1, ToppingSausage = 1, ToppingPepperoni = 1, ToppingHam = 1, ToppingBellPepper = value, ToppingChicken = value, ToppingSauce = value, CrustPan = 1, CrustDeepDish = value, PizzaSize = 1 }
         };
 
 
-    }
-}
-{
-    public Class2()
-    {
-        Class1 ord = new Class1();
-        Pizza a = ord.MyList;
-    }
-}
+
     
 
         
@@ -56,7 +52,7 @@ namespace PizzaStore.Library.Interface
                 new Pizza(){ PizzaSize = null }
                 */
                 
-            };
+            
             foreach (Pizza topn in Pizza)
             System.Console.WriteLine(topn.Name);
 

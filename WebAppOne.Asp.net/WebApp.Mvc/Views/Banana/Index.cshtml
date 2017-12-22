@@ -1,0 +1,26 @@
+﻿@*
+    @{
+        ViewBag.Title = "Index";
+    }
+    @model WebApp.Mvc.Models.Person
+    @ViewBag.Data
+    @ViewData["Data"]
+    @TempData["Data"]
+    @Session["Data"]
+    <span>Hello</span>
+    <h2>hello @Model.Name</h2>*@
+@*@Html.DisplayTextFor(m => m.GivenName)*@
+@using (Html.BeginForm())
+{
+@*
+    @Html.LabelFor(m => p.GivenName)
+    @Html.TextBox(m => m.GivenName)@*our helper, and it grabbed every validation of our property, takes all our C# object and translates it in html rather than physically writting all of it ourselves@
+    @Html.ValidationMessageFor(m => m.FamilyName)
+    @Html.ValidationMessageFor(m => m.GivenName)
+    @Html.LabelFor(m => m.FamilyName)
+    @Html.TextBox(m => m.FamilyName)
+    @Html.AntiForgeryToken()@*to ensure the browser is the same sender@
+*@
+    // <input type="type" name="name" value="submit"/>//input type button only takes text-button-we have to custom event on button submit-read action of form to server reset clear entry, button takes anything else
+    <button type="submit"></button>//any html that I want, input type submit can only use text
+}
