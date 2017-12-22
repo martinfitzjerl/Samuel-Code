@@ -1,17 +1,19 @@
 using System;
+using WebApp.Mvc.Models;
 
 namespace PizzaStore.Library.Models
 {
-    abstract class Pizza
+    public class Pizza : PizzaProperty
     {
         private string _toppingCheese;
         private string _toppingSausage;
         private string _toppingPepperoni;
         private string _toppingHam;
-        private string _toppingPepperoni;
         private string _toppingBellPepper;
+        private string _toppingChicken;
         private string _crustPan;
         private double _pizzaPrice;
+        private double _pizzaSize;
         
 
         public string ToppingCheese 

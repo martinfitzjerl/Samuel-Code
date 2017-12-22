@@ -1,9 +1,8 @@
 using System;
-using WebApp.Mvc.Models;
 
 namespace PizzaStore.Library.Models
 {
-    public class Pizza : PizzaProperty
+    public class Inventory
     {
         private string _toppingCheese;
         private string _toppingSausage;
@@ -11,10 +10,11 @@ namespace PizzaStore.Library.Models
         private string _toppingHam;
         private string _toppingBellPepper;
         private string _toppingChicken;
+        private string _toppingSauce;
         private string _crustPan;
-        private double _pizzaPrice;
-        private double _pizzaSize;
-        
+        private string _crustDeepDish;
+
+
 
         public string ToppingCheese 
         { 
@@ -61,7 +61,7 @@ namespace PizzaStore.Library.Models
                 _toppingHam = value;
             } 
         }
-        public int ToppingBellPepper 
+        public string ToppingBellPepper 
         { 
             get
             {
@@ -94,7 +94,7 @@ namespace PizzaStore.Library.Models
                 _toppingSauce = value;
             } 
         }
-        public int CrustPan 
+        public string CrustPan 
         { 
             get
             {
@@ -102,10 +102,10 @@ namespace PizzaStore.Library.Models
             } 
             private set
             {
-                _crustPan = 1;
+                _crustPan = value;
             } 
         }
-        public int CrustDeepDish 
+        public string CrustDeepDish 
         { 
             get
             {
@@ -116,23 +116,5 @@ namespace PizzaStore.Library.Models
                 _crustDeepDish = value;
             } 
         }
-        public double PizzaPrice
-        {
-            get
-            {
-                return _pizzaPrice;
-            }
-        }
-        public int PizzaSize 
-        { 
-            get
-            {
-                return _pizzaSize;
-            } 
-            private set
-            {
-                _pizzaSize = 1;
-            } 
-        }
-    }
+    }   
 }

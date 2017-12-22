@@ -5,11 +5,10 @@ namespace PizzaStore.Library.Models
     public class Address
     {
         private int _addressID;
-        private string _street;
-        private string _city;
-        private string _state;
-        private int _zipcode;
-
+        public string _street;
+        public string _city;
+        public string _state;
+        public int _zipcode;
         public int AddressID
         { 
             get
