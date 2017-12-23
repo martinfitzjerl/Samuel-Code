@@ -8,6 +8,9 @@ namespace PizzaStore.Library.Models
         private double _sale;
         private double _saleID;
         private int _quantityOrder;
+        private int _saleTax;
+
+
         public double Sale 
         { 
             get
@@ -42,6 +45,18 @@ namespace PizzaStore.Library.Models
             {
                 _quantityOrder = value;
             } 
+        }
+
+        public int SaleTax
+        {
+            get
+            {
+                return _saleTax;
+            }
+            private set
+            {
+                _saleTax = value;
+            }
         }
     }
 }

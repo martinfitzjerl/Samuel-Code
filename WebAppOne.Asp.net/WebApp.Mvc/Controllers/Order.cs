@@ -1,3 +1,4 @@
+/*
 using System;
 using System.Collections.Generic;
 using PizzaStore.Library;
@@ -71,7 +72,7 @@ namespace PizzaStore.Library.Interface
                 Pizza = Order.Select(x => new Order { Pizza=x.Pizza})
         }
         */
-
+        /*
         public int OrderID
         { 
             get
@@ -105,6 +106,7 @@ namespace PizzaStore.Library.Interface
                 _customerTimeLimit = value;
             } 
         }
+*/
         /*
 
         public void CustomerOrderLimit()
@@ -124,9 +126,9 @@ namespace PizzaStore.Library.Interface
             else if (String.IsNullOrWhiteSpace(orderLimit))
                 throw new ArgumentException("order cannot be an empty string");
         }
-        */
+        
     }
-}
+}*/
 
 
 /*
@@ -212,3 +214,4 @@ namespace PizzaStore.Library.Interface
           */
 
 
+    

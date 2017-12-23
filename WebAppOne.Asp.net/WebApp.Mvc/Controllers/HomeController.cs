@@ -6,12 +6,17 @@ using System.Web.Mvc;
 
 namespace WebApp.Mvc.Controllers
 {
-    public class OrderController : Controller
+    public class HomeController : Controller
     {
         // GET: Order
         public ActionResult Index()
         {
             return View();
+        }
+
+        public ActionResult GoToHome()
+        {
+            return View("HomeView");
         }
     }
 }

@@ -4,6 +4,9 @@ namespace PizzaStore.Library.Models
 {
     public class Name
     {
+        private string _firstName;
+        private string _lastName;
+        private string _companyName;
         public string FirstName 
         { 
             get
@@ -15,7 +18,7 @@ namespace PizzaStore.Library.Models
                 _firstName = value;
             } 
         }
-        public char LastName 
+        public string LastName 
         { 
             get
             {
@@ -26,16 +29,16 @@ namespace PizzaStore.Library.Models
                 _lastName = value;
             } 
         }
-        public char State 
-        { 
+        public string CompanyName
+        {
             get
             {
-                return _state;
+                return _companyName;
             }
             private set
             {
-                _state = value;
-            } 
+                _companyName = value;
+            }
         }
     }
 }

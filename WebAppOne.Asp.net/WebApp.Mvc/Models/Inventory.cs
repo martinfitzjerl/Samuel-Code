@@ -1,10 +1,23 @@
 using System;
+using WebApp.Mvc.Models.Property;
 
 namespace PizzaStore.Library.Models
 {
-    public class Inventory
-    {       
-        public char ToppingCheese 
+    public class Inventory : PizzaProperty
+    {
+        private string _toppingCheese;
+        private string _toppingSausage;
+        private string _toppingPepperoni;
+        private string _toppingHam;
+        private string _toppingBellPepper;
+        private string _toppingChicken;
+        private string _toppingSauce;
+        private string _crustPan;
+        private string _crustDeepDish;
+
+
+
+        public string ToppingCheese 
         { 
             get
             {
@@ -15,7 +28,7 @@ namespace PizzaStore.Library.Models
                 _toppingCheese = value;
             } 
         }
-        public char ToppingSausage 
+        public string ToppingSausage 
         { 
             get
             {
@@ -26,7 +39,7 @@ namespace PizzaStore.Library.Models
                 _toppingSausage = value;
             } 
         }
-        public char ToppingPepperoni 
+        public string ToppingPepperoni 
         { 
             get
             {
@@ -38,7 +51,7 @@ namespace PizzaStore.Library.Models
             } 
         }
                         
-        public char ToppingHam 
+        public string ToppingHam 
         { 
             get
             {
@@ -49,7 +62,7 @@ namespace PizzaStore.Library.Models
                 _toppingHam = value;
             } 
         }
-        public char ToppingBellPepper 
+        public string ToppingBellPepper 
         { 
             get
             {
@@ -60,7 +73,7 @@ namespace PizzaStore.Library.Models
                 _toppingBellPepper = value;
             } 
         }
-        public char ToppingChicken 
+        public string ToppingChicken 
         { 
             get
             {
@@ -71,7 +84,7 @@ namespace PizzaStore.Library.Models
                 _toppingChicken = value;
             } 
         }
-        public char ToppingSauce 
+        public string ToppingSauce 
         { 
             get
             {
@@ -82,7 +95,7 @@ namespace PizzaStore.Library.Models
                 _toppingSauce = value;
             } 
         }
-        public char CrustPan 
+        public string CrustPan 
         { 
             get
             {
@@ -93,7 +106,7 @@ namespace PizzaStore.Library.Models
                 _crustPan = value;
             } 
         }
-        public char CrustDeepDish 
+        public string CrustDeepDish 
         { 
             get
             {

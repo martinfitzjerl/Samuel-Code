@@ -114,8 +114,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BananaController.cs" />
     <Compile Include="Controllers\Order.cs" />
-    <Compile Include="Controllers\OrderController.cs" />
-    <Compile Include="Controllers\PizzaController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -147,6 +146,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Banana\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\Home\HomeView.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,6 +158,12 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Order\" />
     <Folder Include="Views\Pizza\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PizzaStore.Library\PizzaStore.Library.csproj">
+      <Project>{697564d1-3950-4a58-a0c2-7a317d3ab39f}</Project>
+      <Name>PizzaStore.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,10 +1,11 @@
 using System;
-using WebApp.Mvc.Models;
+using WebApp.Mvc.Models.Property;
 
 namespace PizzaStore.Library.Models
 {
     public class Pizza : PizzaProperty
     {
+        /*
         private string _toppingCheese;
         private string _toppingSausage;
         private string _toppingPepperoni;
@@ -133,6 +134,6 @@ namespace PizzaStore.Library.Models
             {
                 _pizzaSize = 1;
             } 
-        }
+        }*/
     }
 }

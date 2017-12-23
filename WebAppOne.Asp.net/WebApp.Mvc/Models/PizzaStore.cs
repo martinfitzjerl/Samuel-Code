@@ -37,7 +37,7 @@ namespace PizzaStore.Library.Models
 
 
 /*
- *         PizzaStore ps = new PizzaStore();
+          PizzaStore ps = new PizzaStore();
         ps.Location();
         ps.Name();
         ps.Phone();
@@ -46,4 +46,4 @@ namespace PizzaStore.Library.Models
         ps.History();
         ps.Customer();
  * 
- * /
+ */

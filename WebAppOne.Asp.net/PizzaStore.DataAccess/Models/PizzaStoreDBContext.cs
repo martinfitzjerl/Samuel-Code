@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿/*
+using Microsoft.EntityFrameworkCore;
 using PizzaStore.DataAccess.Models;
 using System;
 using System.Collections.Generic;
@@ -25,3 +26,4 @@ namespace PizzaStore.DataAccess.Models
         
     }
 }
+*/

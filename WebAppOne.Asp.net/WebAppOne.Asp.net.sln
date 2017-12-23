@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppOne.Asp.net", "WebAppOne.Asp.net\WebAppOne.Asp.net.csproj", "{E273B0DC-ACA6-4A01-9480-84BC2863F1C6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp.Mvc", "WebApp.Mvc\WebApp.Mvc.csproj", "{DE1CB4EB-3FC5-4860-A3C2-FA6DC6675CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStore.Library", "PizzaStore.Library\PizzaStore.Library.csproj", "{697564D1-3950-4A58-A0C2-7A317D3AB39F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaStore.Library", "PizzaStore.Library\PizzaStore.Library.csproj", "{697564D1-3950-4A58-A0C2-7A317D3AB39F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStore.DataAccess", "PizzaStore.DataAccess\PizzaStore.DataAccess.csproj", "{FCA7C831-A90C-491D-BABA-51283A97382D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PizzaStore.DataAccess", "PizzaStore.DataAccess\PizzaStore.DataAccess.csproj", "{FCA7C831-A90C-491D-BABA-51283A97382D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E273B0DC-ACA6-4A01-9480-84BC2863F1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E273B0DC-ACA6-4A01-9480-84BC2863F1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E273B0DC-ACA6-4A01-9480-84BC2863F1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E273B0DC-ACA6-4A01-9480-84BC2863F1C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DE1CB4EB-3FC5-4860-A3C2-FA6DC6675CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DE1CB4EB-3FC5-4860-A3C2-FA6DC6675CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE1CB4EB-3FC5-4860-A3C2-FA6DC6675CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
